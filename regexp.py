@@ -6,7 +6,7 @@ import csv
 with open("phonebook_raw.csv", encoding="utf-8") as f:
     rows = csv.reader(f, delimiter=",")
     contacts_list = list(rows)
-    # pprint(contacts_list)
+    pprint(contacts_list)
 
     pattern_fio = r'([А-ЯЁ][а-яё]{2,})(\s|\W*)([А-ЯЁ][а-яё]{2,})\s([А-ЯЁ][а-яё]{2,})'
     fio = re.finditer(pattern_fio, str(contacts_list))
