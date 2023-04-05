@@ -46,7 +46,10 @@ with open("phonebook_raw.csv", encoding="utf-8") as f:
     # pprint(new_contacts_list)
 
     for i in new_contacts_list:
-        print(i)
+        print(list(filter(None, i)))
+
+
+
 
 
 
